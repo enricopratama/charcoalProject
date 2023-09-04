@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .dropdown .btn {
+        color: black;
+        background-color: white;
+        border: none;
+      }
+
+      /* Dropdown menu items style */
+      .dropdown-menu li a {
+        color: black;
+        background-color: white;
+      }
+
+      /* Change color of dropdown caret icon */
+      .dropdown-toggle .caret {
+        border-top-color: white;
+      }
+
+      .dropdown {
+        opacity: 0.5;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      /* Full opacity on hover */
+      .dropdown:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="dropdown"
+      style="position: absolute; top: 20vh; right: 10px; z-index: 100"
+    >
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Language
+      </button>
+      <ul class="dropdown-menu">
+        <li onclick="toggleLanguage('English')">
+          <a class="dropdown-item" href="#">English</a>
+        </li>
+        <li onclick="toggleLanguage('Indonesian')">
+          <a class="dropdown-item" href="#">Indonesian</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

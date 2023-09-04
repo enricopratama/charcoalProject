@@ -1,55 +1,113 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Work+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Work+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Work+Sans:wght@600&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   color: white;
+  font-family: "Saira Condensed", sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background-image: url("/image/aboutUs2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* to achieve parallax scrolling effect */
 }
 
 .text {
+  position: relative;
+  z-index: 1;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: 20vw;
 }
 
-h1.title {
+@media (max-width: 756px) {
+  .parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .text {
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20vw;
+    padding-top: 20vh;
+  }
+}
+
+/* FOLD */
+@media (max-width: 290px) {
+  .parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 120vh;
+  }
+
+  .text {
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20vw;
+    padding-top: 20vh;
+  }
+}
+
+h1.title-aboutus {
   color: #ffa500;
 }
 
-.image-start {
-  background-image: url("/image/aboutUs2.png");
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-size: cover; /* Adjust as needed */
-  background-position: center center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+p.about-us {
+  font-size: calc(0.8rem + 0.5vw);
 }
 
 .section-2 {
-  background-color: #848583;
+  background-color: #ababab;
   padding: 10vw;
 }
 
 .product-card {
-  background-color: #323232;
+  background-color: #1c2329;
   border-radius: 20px;
   padding: 100px;
 }
 
 .img-1 {
   flex: 1;
-  min-width: 200px !important;
-  min-height: 200px !important;
+}
+
+@media (min-width: 992px) {
+  .img-1 {
+    flex: 1;
+    max-width: 400px !important;
+  }
 }
 
 .highlight-text {
@@ -72,7 +130,23 @@ h1.title {
   transition: background-color 0.2s ease;
 }
 
+.cta-button-2 {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease;
+}
+
 .cta-button:hover {
+  background-color: darkorange;
+}
+
+.cta-button-2:hover {
   background-color: darkorange;
 }
 
@@ -85,7 +159,7 @@ h1.title {
 }
 
 .section-3 {
-  background-color: #262626;
+  background-color: #1f232c;
 }
 
 .machine-content {
@@ -93,15 +167,36 @@ h1.title {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 11vw;
+  align-items: center;
 }
 
-.img-2 {
-  flex: 1;
+@media (min-width: 800px) {
+  .img-2 {
+    flex: 1;
+    max-width: 500px !important;
+  }
 }
 
-.text-machine {
-  flex: 1;
-  padding-left: 35px;
+@media (min-width: 800px) {
+  .text-machine {
+    flex: 1;
+    padding-left: 35px;
+    min-width: 40%;
+  }
+}
+
+@media (max-width: 799px) {
+  .text-machine {
+    flex: 1;
+    min-width: 40%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .img-2 {
+    flex: 1;
+  }
 }
 
 .content-2 {
@@ -110,8 +205,8 @@ h1.title {
   flex-wrap: wrap;
   flex: 1;
   min-width: 40%;
-  margin: 20px;
   align-items: center;
+  justify-content: center;
 }
 
 .cta-button-2 {
@@ -123,6 +218,40 @@ h1.title {
   font-size: 16px;
   cursor: pointer;
   margin-top: 20px;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Adjust this value if needed */
+  bottom: 8.7vh;
+}
+
+.whatsapp-icon:hover::after {
+  content: "WhatsApp";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.whatsapp-icon:hover::after {
+  opacity: 1;
+}
+
+.pad-left-logo {
+  margin-left: 30px;
 }
 
 @media (min-width: 993px) {
@@ -169,13 +298,15 @@ h1.title {
 
 @media (max-width: 756px) {
   .product-card {
-    background-color: #323232;
+    background-color: #1c2329;
     border-radius: 20px;
-    padding: 50px;
+    padding: 20px;
+    margin: 5px;
   }
 
   .section-2 {
-    background-color: #848583;
-    padding: 20px;
+    padding: 5px;
   }
 }
+
+/* Loader */

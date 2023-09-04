@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partial/header') %>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/machinery.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <link rel="stylesheet" href="css/productCard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Machinery</title>
+  </head>
+  <body>
+    <%- include('./partial/navbar') %> <%- include('./partial/languageButton2')
+    %>
+    <!--Pre loader-->
+    <div class="lds-ring" id="preloader"></div>
+    <!-- Start of carousel-->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide carousel-extend"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img
+            src="/image/machine1.png"
+            class="d-block w-100"
+            alt="..."
+            style="max-height: 93vh"
+          />
+          <div class="carousel-caption d-md-block">
+            <div
+              class="title"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <h1 class="product">
+                Explore Our <span class="italicize"> High End </span> Machines
+                <br />
+                <span class="italicize" style="font-size: small"
+                  >Current Slide: Plastic Rolling Component</span
+                >
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="/image/aboutUs.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-md-block">
+            <div class="title">
+              <h1 class="product">
+                Why <span class="italicize">Our</span> Plastic Products? <br />
+                <span class="italicize" style="font-size: small"
+                  >Current Slide: Garbage Disposable Plastic Bags</span
+                >
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="/image/plasticCarousel4.png"
+            class="d-block w-100"
+            alt="..."
+          />
+
+          <div class="carousel-caption d-md-block">
+            <div class="title">
+              <h1 class="product">
+                Why <span class="italicize">Our</span> Plastic Products? <br />
+                <span class="italicize" style="font-size: small"
+                  >Current Slide: Multi-purpose colored bags</span
+                >
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Section 2 Start-->
+    <div class="section-2">
+      <div
+        class="product-card"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+      >
+        <div class="content-2">
+          <video width="500" controls class="widthMatch">
+            <source src="/video/productVideo3.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+          <div class="content">
+            <p class="desc-1" data-id="desc-1">
+              <span class="highlight-text">Our Materials</span><br />
+              Our flagship products are HDPE (High Density Polyethylene) and
+              LDPE, which are thermoplastic polyethylenes made from petroleum.
+              HDPE has the characteristics of being slightly opaque,
+              transparent, and elastic. This plastic is impermeable to water,
+              odorless, and impact-resistant. We offer several products:
+            </p>
+            <ol class="list-materials">
+              <li>Plastic Trash Bags</li>
+              <li>Plastic Packaging</li>
+              <li>Industrial Plastic Products</li>
+            </ol>
+            <a
+              href="https://www.gap-polymers.com/en/blog-post/polyethylene-plastic#:~:text=HDPE%20is%20used%20in%20strong,packaging%20materials%20like%20plastic%20wraps."
+              target="_blank"
+            >
+              <button class="cta-button">More About LLDPE & HDPE</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Section 3 Start-->
+    <div class="section-3" id="par1">
+      <div class="machine-content" data-aos="fade-up" data-aos-duration="2000">
+        <img
+          src="/image/plasticCard1.png"
+          alt=""
+          style="max-height: 500px"
+          class="img-fluid img-2"
+        />
+        <div class="text-machine">
+          <p class="desc-machine" data-id="desc-machine">
+            <span class="highlight-text">Plastic Garbage Trash Bags</span><br />
+            Used for household waste and other large areas. Our plastic garbage
+            bags come in 4 different sizes and also have a standard thickness of
+            0.3 mm to prevent easy tearing.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+            target="_blank"
+          >
+            <button class="cta-button-2">View Our Price List</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-2" id="par2">
+      <div
+        class="product-card"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+      >
+        <div class="content-2">
+          <img
+            src="/image/plasticCor.png"
+            alt=""
+            style="max-height: 500px"
+            class="img-fluid img-2"
+          />
+          <div class="content">
+            <p class="desc-1" data-id="desc-1">
+              <span class="highlight-text"
+                >Military-grade Industrial Plastic Bags</span
+              ><br />
+              Versatile Industrial Solution: Ideal for a Wide Range of
+              Applications including Plastic Molding, Painting, and Asphalt
+              Work! Our premium plastic material boasts a standardized thickness
+              of 0.5 mm, ensuring top-notch quality and durability for all your
+              industrial needs. Invest in the best for your projects today!
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+              target="_blank"
+            >
+              <button class="cta-button">View Our Price List</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-3" id="par3">
+      <div class="machine-content" data-aos="fade-up" data-aos-duration="2000">
+        <img
+          src="/image/plasticCarousel2.png"
+          alt=""
+          style="max-height: 500px"
+          class="img-fluid img-2"
+        />
+        <div class="text-machine">
+          <p class="desc-machine" data-id="desc-machine">
+            <span class="highlight-text"
+              >Multi-purpose Colored Plastic Bags</span
+            ><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            deserunt, tenetur nam labore amet voluptatibus a maxime repudiandae
+            sapiente eveniet praesentium laudantium expedita reiciendis
+            laboriosam placeat neque repellat incidunt itaque.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1f66GZrJ3Phwij2IB2pHLuEAiwlBkKCXR/view?usp=share_link"
+            target="_blank"
+          >
+            <button class="cta-button-2">View Our Price List</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Flash Cards Start-->
+    <div class="flashcard-2 img-fluid" style="background-color: #1f232c">
+      <div class="wrapper">
+        <div class="card">
+          <img src="/image/plasticCard1.png" />
+          <div class="info">
+            <h1 class="h1-card">Garbage Trash Bags</h1>
+            <p>
+              Lorem Ipsum is simply dummy text from the printing and typeseting
+              industry
+            </p>
+            <a href="#par1">
+              <button>Read More</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/image/plasticCor.png" />
+          <div class="info">
+            <h1 class="h1-card">Military-grade Industrial Plastic Bags</h1>
+            <p>
+              Lorem Ipsum is simply dummy text from the printing and typeseting
+              industry
+            </p>
+            <a href="#par2">
+              <button>Read More</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/image/plasticCarousel2.png" />
+          <div class="info">
+            <h1 class="h1-card">Multi-purpose Colored Plastic Bags</h1>
+            <p>
+              Lorem Ipsum is simply dummy text from the printing and typeseting
+              industry
+            </p>
+            <a href="#par3">
+              <button>Read More</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleLanguage(language) {
+        let description = document.getElementById("title-aboutus");
+        if (language === "Indonesian") {
+          description.innerHTML = "Tentang Kami"; // Add more lines for more text translations
+        } else {
+          description.innerHTML = "About Us";
+        }
+      }
+    </script>
+    <script src="javascript/preloader.js"></script>
+  </body>
+  <%- include('./partial/footer') %> <%- include('./partial/scriptFooter') %>
+</html>

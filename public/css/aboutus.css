@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Work+Sans:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-2 {
+  padding: 10vw;
+}
+
+.section-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/image/plasticBG2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* to achieve parallax scrolling effect */
+}
+
+.product-card {
+  background-color: #323232;
+  border-radius: 20px;
+  padding: 100px;
+}
+
+@media (min-width: 992px) {
+  .img-1 {
+    flex: 1;
+    max-width: 500px !important;
+  }
+}
+
+.highlight-text {
+  font-size: calc(1.5rem + 1vw);
+  color: #ffa500;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.content-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  min-width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: darkorange;
+}
+
+@media (min-width: 993px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 40%;
+    margin: 20px;
+    align-items: center;
+  }
+
+  .cta-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .desc-1 {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 90%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 756px) {
+  .product-card {
+    background-color: #323232;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 5px;
+  }
+
+  .section-2 {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1088px) {
+  .section-2 {
+    padding-top: 20vh;
+  }
+}
+
+.icon-container {
+  text-align: center;
+  padding: 2vw;
+  max-width: 500px;
+}
+
+.icon-label {
+  font-size: 14px;
+  color: white;
+  margin-top: 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px 10vh 60px;
+}
+
+.mission,
+.vision,
+.values {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.mission img,
+.vision img {
+  max-width: 20%;
+}
+
+.values img {
+  max-width: 85px;
+}
+
+.values-2 img {
+  max-width: 55px;
+}
+
+@media (max-width: 1020px) {
+  .mission img,
+  .vision img {
+    max-width: 40%;
+  }
+  .values img {
+    max-width: 50%;
+  }
+  .icons {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .icon-container {
+    flex: 33%; /* Each icon container SHOULD OCCUPY 50% of the container width */
+  }
+}
+
+@media (max-width: 765px) {
+  .mission img,
+  .vision img {
+    max-width: 20%;
+  }
+
+  .values img {
+    max-width: 20%;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission,
+  .values,
+  .vision {
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .mission,
+  .vision,
+  .values {
+    padding: 20px 0;
+  }
+}
+
+p.desc-icon {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.philosophy-title {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.bg-grey {
+  background-color: #727272;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-grey-dark {
+  background-color: #47484a;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons-title {
+  padding-top: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+h2.philosophy-title {
+  color: #ffa500;
+  font-weight: 600;
+  font-size: calc(1rem + 1vw);
+}

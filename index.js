@@ -21,6 +21,18 @@ app.get('/', (req, res) => {
   res.render('home', { currentPage: 'home' });
 });
 
+app.get('/aboutus', (req, res) => {
+  res.render('aboutus', { currentPage: 'aboutus' });
+});
+
+app.get('/products', (req, res) => {
+  res.render('products', { currentPage: 'products' });
+});
+
+app.get('/machinery', (req, res) => {
+  res.render('machinery', { currentPage: 'machinery' });
+});
+
 app.get('*', (req, res, next) => {
   if (req.headers.host.startsWith('www.')) {
     res.redirect(301, `http://${req.headers.host.slice(4)}${req.originalUrl}`);

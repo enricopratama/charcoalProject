@@ -51,6 +51,15 @@
   padding: 5px 10px;
 }
 
+.pad-left {
+  padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+  .pad-left {
+    padding-left: 14px;
+  }
+}
 @media (min-width: 992px) {
   .nav-item a:hover {
     color: white !important;

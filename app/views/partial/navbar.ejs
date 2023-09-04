@@ -13,11 +13,10 @@
         <!--Container fluid makes sure that the navbar resizes fluidly-->
         <a href="/" style="top: 42px" class="maxWidth widthPercent">
           <img
-            id="logo-digitec"
-            class="d-inline-block align-top ml-0 ms-0 img-fluid logo-digitec pl-lg-8"
+            class="d-inline-block align-top ml-0 ms-0 img-fluid pl-lg-8 pad-left"
             src="/image/logotransparent.png"
             alt="Logo"
-            style="width: 100%; top: 42px; max-width: 150px; padding-left: 50px"
+            style="width: 100%; top: 42px; max-width: 150px"
           />
         </a>
         <button
@@ -46,6 +45,13 @@
             </li>
             <li class="nav-item">
               <a
+                class="nav-link <% if (currentPage === 'aboutus') { %>active<% } %>"
+                href="aboutus"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
                 class="nav-link <% if (currentPage === 'products') { %>active<% } %>"
                 href="products"
                 >Products</a
@@ -53,30 +59,9 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link <% if (currentPage === 'support') { %>active<% } %>"
-                href="support"
+                class="nav-link <% if (currentPage === 'machinery') { %>active<% } %>"
+                href="machinery"
                 >Machinery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link <% if (currentPage === 'support') { %>active<% } %>"
-                href="support"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link <% if (currentPage === 'support') { %>active<% } %>"
-                href="support"
-                >Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link <% if (currentPage === 'support') { %>active<% } %>"
-                href="support"
-                >Contact</a
               >
             </li>
           </ul>

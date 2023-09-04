@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Work+Sans:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.italicize {
+  font-style: italic;
+}
+
+.container-1 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  background-color: #222331;
+  padding-top: 20vh;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+  top: -200%;
+}
+
+h1.product {
+  text-align: center;
+  color: #ffa500;
+  font-size: calc(1rem + 1vw);
+}
+
+@media (max-width: 580px) {
+  .title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: calc(0.5rem + 0.5vw);
+    top: -150%;
+  }
+
+  .widthMatch {
+    width: 80vw;
+  }
+}
+
+/* Carousel */
+.carousel-extend {
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+@media (max-width: 450.98px) {
+  .carousel-extend {
+    margin-top: 3.5rem;
+    padding-top: 3.5rem;
+  }
+}
+
+.carousel-item,
+.fixed {
+  background-attachment: fixed;
+  background-size: cover; /* or 'contain' if you prefer */
+  background-position: center center; /* Adjust as needed */
+}
+
+@media (max-width: 992px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  ol.list-materials {
+    padding-right: 40px;
+  }
+}

@@ -6,25 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <title>Gracio Sentosa Bersaudara</title>
+    <title>PT Gracio Sentosa Bersaudara | Home</title>
   </head>
   <body>
-    <%- include('./partial/navbar') %>
-    <div class="image-start">
-      <div class="text">
-        <h1 class="title">About Us</h1>
-        <p style="font-style: italic">PT Gracio Sentosa Bersama</p>
-        <p class="about-us">
+    <%- include('./partial/navbar') %> <%- include('./partial/languageButton')
+    %>
+    <!--Pre loader-->
+    <div class="lds-ring" id="preloader"></div>
+
+    <div class="parallax-container">
+      <div class="parallax-bg translate"></div>
+      <div class="text translate" data-aos="fade-up" data-aos-duration="2000">
+        <h1 class="title-aboutus" id="title-aboutus">About Us</h1>
+        <p class="about-us" style="font-style: italic">
+          PT Gracio Sentosa Bersama
+        </p>
+        <p class="about-us" data-id="about-us">
           We are a pioneering plastic manufacturing company dedicated to
           producing high-quality, eco-friendly plastic solutions. With over half
           a decade of experience, we have been at the forefront of innovation,
@@ -35,16 +41,17 @@
     </div>
 
     <div class="section-2">
-      <div class="product-card">
+      <div class="product-card" data-aos="fade-up" data-aos-duration="2500">
         <div class="content-2">
           <img
-            src="/image/plasticBags.png"
+            src="/image/plasticStock.png"
             alt=""
             style="max-height: 500px"
             class="img-fluid img-1"
+            loading="lazy"
           />
           <div class="content">
-            <p class="desc-1">
+            <p class="desc-1" data-id="desc-1">
               <span class="highlight-text">Plastic Bags</span><br />
               We are a pioneering plastic manufacturing company dedicated to
               producing high-quality, eco-friendly plastic solutions. With over
@@ -53,56 +60,64 @@
               sustainability to create products that cater to the modern world's
               needs.
             </p>
-            <button class="cta-button">Learn More</button>
+            <a href="products">
+              <button class="cta-button">Learn More</button>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="section-3">
-      <div class="machines-text">
-        <img
-          src="/image/plasticBags.png"
-          alt=""
-          style="max-height: 500px"
-          class="img-fluid img-1"
-        />
-        <div class="content">
-          <p class="desc-1">
-            <span class="highlight-text">Plastic Bags</span><br />
-            We are a pioneering plastic manufacturing company dedicated to
-            producing high-quality, eco-friendly plastic solutions. With over
-            half a decade of experience, we have been at the forefront of
-            innovation, constantly pushing the boundaries of technology and
-            sustainability to create products that cater to the modern world's
-            needs.
-          </p>
-          <button class="cta-button">Learn More</button>
-        </div>
-      </div>
-    </div> -->
     <div class="section-3">
-      <div class="machine-content">
+      <div class="machine-content" data-aos="fade-up" data-aos-duration="2000">
         <img
-          src="/image/plasticBags.png"
+          src="/image/machines.png"
           alt=""
           style="max-height: 500px"
           class="img-fluid img-2"
+          loading="lazy"
         />
         <div class="text-machine">
-          <p class="desc-machine">
-            <span class="highlight-text">Plastic Bags</span><br />
-            We are a pioneering plastic manufacturing company dedicated to
-            producing high-quality, eco-friendly plastic solutions. With over
-            half a decade of experience, we have been at the forefront of
-            innovation, constantly pushing the boundaries of technology and
-            sustainability to create products that cater to the modern world's
-            needs.
+          <p class="desc-machine" data-id="desc-machine">
+            <span class="highlight-text">We Supply Plastic Machinery</span
+            ><br />
+            Elevate your plastic manufacturing capabilities with our premium
+            range of imported machines. We specialize in offering top-tier
+            plastic manufacturing equipment sourced from renowned international
+            suppliers such as China. Our curated selection empowers you to
+            optimize production processes, enhance efficiency, and unlock new
+            dimensions of quality in your plastic manufacturing endeavors.
+            Partner with us to access cutting-edge technology that's designed to
+            propel your business or any plastic-related needs forward.
           </p>
-          <button class="cta-button-2">More About Plastic Machinery</button>
+          <a href="machinery">
+            <button class="cta-button-2">More About Plastic Machinery</button>
+          </a>
         </div>
       </div>
     </div>
+
+    <a
+      href="https://wa.me/+6287852808115/?text=Halo! Saya tertarik dengan produk [nama produk].Bisakah Anda memberi saya informasi lebih lanjut? "
+      class="whatsapp-icon"
+      target="”_blank”"
+      ><img
+        src="/image/whatsapp-2.png"
+        alt="WhatsApp Icon"
+        style="width: 50px; height: 50px"
+    /></a>
+
+    <script>
+      function toggleLanguage(language) {
+        let description = document.getElementById("title-aboutus");
+        if (language === "Indonesian") {
+          description.innerHTML = "Tentang Kami"; // Add more lines for more text translations
+        } else {
+          description.innerHTML = "About Us";
+        }
+      }
+    </script>
+    <script src="javascript/preloader.js"></script>
   </body>
   <%- include('./partial/footer') %> <%- include('./partial/scriptFooter') %>
 </html>
