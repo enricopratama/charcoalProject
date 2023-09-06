@@ -1,5 +1,5 @@
 const app = {
-    PORT: 3000
+    PORT: 2000
 };
 
 module.exports = app;

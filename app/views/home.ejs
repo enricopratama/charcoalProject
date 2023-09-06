@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <%- include('./partial/header') %>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Export Indonesia</title>
   </head>
   <body>
-    <p>Hello this is a test of my website!</p>
+    <%- include('./partial/navbar') %>
+    <div class="imageStart">
+      <div class="text-1">
+        <p class="best-quality">Best Quality</p>
+        <h1 class="title-desc">Coconut Charcoal Briquettes</h1>
+        <p class="desc-1">
+          We supply coconut shell charcoal briquettes in bulk (up to 350 metric
+          tons per month) and can ship to any destination worldwide. We can
+          produce briquettes in any desired shape or size and tailor make
+          packaging according to our customers exact design preferences.
+        </p>
+      </div>
+    </div>
+    <div style="background-color: black">
+      <div class="flex-container">
+        <div class="image2 img-fluid image-container">
+          <img
+            src="/image/asset2.png"
+            alt="charcoal2"
+            class="image2 img-fluid img-hover"
+          />
+        </div>
+        <div class="text-2">
+          <h1 class="text-2">Top Producers Of Charcoal</h1>
+          <p class="text-2">
+            We are a leading manufacturer and exporter of 100% coconut shell
+            charcoal briquettes, from Indonesia. We control every step of the
+            manufacturing and quality control process of our briquettes, from
+            coconut shell selection, cleaning and carbonization all the way
+            through to final briquette, drying and packaging. Our production
+            locations are situated in all the major coconut harvesting regions
+            of Indonesia in Sumatra, Java and Sulawesi.
+          </p>
+        </div>
+      </div>
+
+      <div class="icons">
+        <div class="icon-container">
+          <div class="natural">
+            <img src="/image/natural2.png" alt="" />
+          </div>
+          <div class="icon-label">
+            <h5>NATURAL</h5>
+            <p class="desc-icon">
+              Natural, High quality, Non Toxic, <br />
+              No Chemical
+            </p>
+          </div>
+        </div>
+        <div class="icon-container">
+          <div class="quality">
+            <img src="/image/quality2.png" alt="" />
+          </div>
+          <div class="icon-label">
+            <h5>QUALITY</h5>
+            <p class="desc-icon">
+              Healty Clean, Smokeless, Odorless, <br />
+              Tasteless
+            </p>
+          </div>
+        </div>
+        <div class="icon-container">
+          <div class="process">
+            <img src="/image/process2.png" alt="" />
+          </div>
+          <div class="icon-label">
+            <h5>FINE PROCESS</h5>
+            <p class="desc-icon">
+              Great quality, Green, Renewable, <br />
+              Certificated
+            </p>
+          </div>
+        </div>
+        <div class="icon-container">
+          <div class="layering">
+            <img src="/image/layering2.png" alt="" />
+          </div>
+          <div class="icon-label">
+            <h5>LAYERING</h5>
+            <p class="desc-icon">
+              Ready for Request Packing & <br />
+              Private Labeling (OEM)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <h1 class="title-desc">GALLERY</h1>
+        <p class="gallery-desc">
+          You can see our gallery here, click to check out our collections. You
+          can see our daily activity and products that are exported to many
+          countries and regions all over the world.
+        </p>
+      </div>
+
+      <!-- <div class="flash-card">
+        <div class="container">
+          <div class="box">
+              <div class="imgBox">
+                  <img src="/image/inventory.png" alt="">
+              </div>
+              <div class="content">
+                  <h2>Charcoal</br>
+                  <span>Clean Production Process</span></h2>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="/image/productionChar.png" alt="">
+              </div>
+              <div class="content">
+                  <h2>Inventory</br>
+                  <span>Several inventory levels</span></h2>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="/image/sampleProduct.png" alt="">
+              </div>
+              <div class="content">
+                  <h2>Sample Product</br>
+                  <span>100% Naturally Burnt Charcoal</span></h2>
+              </div>
+          </div>
+      </div> -->
+
+      <div class="flashcard-2 img-fluid">
+        <div class="wrapper">
+          <div class="card"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+            <div class="info">
+              <h1>Mountain</h1>
+              <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card"><img src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+            <div class="info">
+              <h1>Road</h1>
+              <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card"><img src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&amp;fit=crop&amp;w=311&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"/>
+            <div class="info">
+              <h1>Protester</h1>
+              <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
   </body>
+  <%- include('./partial/footer') %> <%- include('./partial/scriptFooter') %>
 </html>
