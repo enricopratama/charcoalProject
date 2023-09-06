@@ -47,6 +47,25 @@ p.desc-1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  /* padding-left: 84px; */
+}
+
+@media (min-width: 992px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.img-hover {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Include transform transition */
+}
+
+.img-hover:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 p.text-2 {
@@ -61,13 +80,13 @@ p.text-2 {
     flex: 1;
     width: 500px;
     height: 400px;
-    padding: 20px 20px 5px 90px;
+    padding: 20px 10px 5px 90px;
   }
 
   .text-2 {
     width: 60%;
     flex: 1;
-    padding-top: 20px;
+    padding-top: 30px;
   }
 }
 
@@ -203,109 +222,7 @@ p.desc-icon {
   font-size: calc(0.5rem + 0.5vw);
 }
 
-/* Start flash card CSS */
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-dont forget to commment this out
-body {
-  width: 100vw;
-  min-height: 100vh;
-  background-color: black;
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.container .box {
-  position: relative;
-  width: 30rem;
-  height: 30rem;
-  margin: 4rem;
-}
-
-.container .box:hover .imgBox {
-  transform: translate(-3.5rem, -3.5rem);
-}
-
-.container .box:hover .content {
-  transform: translate(3.5rem, 3.5rem);
-}
-
-.imgBox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  transition: all 0.5s ease-in-out;
-}
-
-.imgBox img {
-  width: 30rem;
-  height: 30rem;
-  object-fit: cover;
-  resize: both;
-}
-
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1.5rem;
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  z-index: 1;
-  align-items: flex-end;
-  text-align: center;
-  transition: 0.5s ease-in-out;
-}
-
-.content h2 {
-  display: block;
-  font-size: 2rem;
-  color: #111;
-  font-weight: 500;
-  line-height: 2rem;
-  letter-spacing: 1px;
-}
-
-.content span {
-  color: #555;
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-}
-
-@media (max-width: 600px) {
-  .container .box:hover .content {
-    transform: translate(0, 3.5rem);
-  }
-  .container .box:hover .imgBox {
-    transform: translate(0, -3.5rem);
-  }
-} */
-
-/* Flashcard 2 */
+/* Flashcard Gallery */
 .flashcard-2 {
   display: flex;
   flex: 1;
@@ -334,7 +251,7 @@ body {
   border-color: black;
 }
 .card:hover {
-  transform: translateY(20px);
+  transform: translateY(10px);
 }
 .card:hover:before {
   opacity: 1;
